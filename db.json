@@ -1,0 +1,278 @@
+{
+  "pizzas": [
+    {
+      "id": 1,
+      "name": "Margherita",
+      "description": "Tomato, mozzarella, basil",
+      "price": 70
+    },
+    {
+      "id": 2,
+      "name": "Pepperoni",
+      "description": "Tomato, mozzarella, pepperoni",
+      "price": 70
+    },
+    {
+      "id": 3,
+      "name": "Hawaiian",
+      "description": "Tomato, mozzarella, ham, pineapple",
+      "price": 75
+    },
+    {
+      "id": 4,
+      "name": "Meat Feast",
+      "description": "Tomato, mozzarella, ham, pepperoni, bacon, chicken",
+      "price": 90
+    },
+    {
+      "id": 5,
+      "name": "Vegetarian",
+      "description": "Tomato, mozzarella, peppers, onions, mushrooms, sweetcorn",
+      "price": 75
+    },
+    {
+      "id": 6,
+      "name": "Vegan",
+      "description": "Tomato, vegan cheese, peppers, onions, mushrooms, sweetcorn",
+      "price": 80
+    }
+  ],
+  "extras": [
+    {
+      "id": 101,
+      "name": "BBQ Sauce",
+      "description": "Pot",
+      "price": 5
+    },
+    {
+      "id": 102,
+      "name": "Garlic Sauce",
+      "description": "Pot",
+      "price": 5
+    },
+    {
+      "id": 103,
+      "name": "Chilli Sauce",
+      "description": "Pot",
+      "price": 5
+    },
+    {
+      "id": 104,
+      "name": "Cheese",
+      "description": "Extra topping",
+      "price": 5
+    }
+  ],
+  "orders": [
+    {
+      "id": 1,
+      "customer": "Hans Hansen",
+      "address": "Villavej 1, 8000 Aarhus C",
+      "phone": "22334455",
+      "email": "hans@gmail.com",
+      "items": [
+        {
+          "count": 2,
+          "id": 1,
+          "name": "Margherita",
+          "description": "Tomato, mozzarella, basil",
+          "price": 70,
+          "subtotal": 140
+        },
+        {
+          "count": 1,
+          "id": 2,
+          "name": "Pepperoni",
+          "description": "Tomato, mozzarella, pepperoni",
+          "price": 70,
+          "extra": [
+            {
+              "id": 103,
+              "name": "Chilli Sauce",
+              "description": "Pot",
+              "price": 5
+            }
+          ],
+          "subtotal": 75
+        }
+      ],
+      "total": 215
+    },
+    {
+      "customer": "Sofie Andersen",
+      "address": "Villavej 7",
+      "phone": "66778899",
+      "email": "Sofie@gmail.com",
+      "items": [
+        {
+          "item": {
+            "id": 2,
+            "name": "Pepperoni",
+            "description": "Tomato, mozzarella, pepperoni",
+            "price": 70
+          },
+          "amount": 1,
+          "extras": {
+            "102": 1
+          }
+        }
+      ],
+      "total": 70,
+      "id": 3
+    },
+    {
+      "customer": "Daniel Simonsen",
+      "address": "Finlandsgade 2",
+      "phone": "88449922",
+      "email": "daniel@gmail.com",
+      "items": [
+        {
+          "item": {
+            "id": 6,
+            "name": "Vegan",
+            "description": "Tomato, vegan cheese, peppers, onions, mushrooms, sweetcorn",
+            "price": 80
+          },
+          "amount": 1,
+          "extras": {
+            "103": 1
+          }
+        }
+      ],
+      "total": 80,
+      "id": 4
+    },
+    {
+      "customer": "Malthe Andreasen",
+      "address": "Finlandsgade 12",
+      "phone": "44006699",
+      "email": "malthe@hotmail.com",
+      "items": [
+        {
+          "item": {
+            "id": 5,
+            "name": "Vegetarian",
+            "description": "Tomato, mozzarella, peppers, onions, mushrooms, sweetcorn",
+            "price": 75
+          },
+          "amount": 1,
+          "extras": {}
+        }
+      ],
+      "total": 75,
+      "id": 5
+    },
+    {
+      "customer": "Emma Mikkelsen",
+      "address": "Finlandsgade 6",
+      "phone": "55992233",
+      "email": "emma@gmail.com",
+      "items": [
+        {
+          "item": {
+            "id": 3,
+            "name": "Hawaiian",
+            "description": "Tomato, mozzarella, ham, pineapple",
+            "price": 75
+          },
+          "amount": 1,
+          "extras": {}
+        },
+        {
+          "item": {
+            "id": 2,
+            "name": "Pepperoni",
+            "description": "Tomato, mozzarella, pepperoni",
+            "price": 70
+          },
+          "amount": 1,
+          "extras": {}
+        }
+      ],
+      "total": 145,
+      "id": 6
+    },
+    {
+      "customer": "Lærke Kristensen",
+      "address": "Finlandsgade 32",
+      "phone": "55998877",
+      "email": "laerke@hotmail.com",
+      "items": [
+        {
+          "item": {
+            "id": 1,
+            "name": "Margherita",
+            "description": "Tomato, mozzarella, basil",
+            "price": 70
+          },
+          "amount": 1,
+          "extras": {}
+        }
+      ],
+      "total": 70,
+      "id": 7
+    },
+    {
+      "customer": "Ulrikke Rasmussen",
+      "address": "Finlandsgade 11",
+      "phone": "44002255",
+      "email": "ulrikke@gmail.com",
+      "items": [
+        {
+          "item": {
+            "id": 2,
+            "name": "Pepperoni",
+            "description": "Tomato, mozzarella, pepperoni",
+            "price": 70
+          },
+          "amount": 2,
+          "extras": {}
+        }
+      ],
+      "total": 140,
+      "id": 8
+    },
+    {
+      "customer": "Oliver Larsen",
+      "address": "Vester allé 7",
+      "phone": "99448855",
+      "email": "oliver@hotmail.com",
+      "items": [
+        {
+          "item": {
+            "id": 4,
+            "name": "Meat Feast",
+            "description": "Tomato, mozzarella, ham, pepperoni, bacon, chicken",
+            "price": 90
+          },
+          "amount": 2,
+          "extras": {}
+        }
+      ],
+      "total": 180,
+      "id": 9
+    },
+    {
+      "customer": "Mohamad",
+      "address": "Hmej 2",
+      "phone": "55668877",
+      "email": "mo@gmail.com",
+      "items": [
+        {
+          "item": {
+            "id": 2,
+            "name": "Pepperoni",
+            "description": "Tomato, mozzarella, pepperoni",
+            "price": 70
+          },
+          "amount": 2,
+          "extras": {
+            "103": 1
+          }
+        }
+      ],
+      "total": 140,
+      "id": 10
+    }
+  ]
+}
