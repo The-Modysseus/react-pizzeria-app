@@ -3,7 +3,7 @@ import { Navbar } from "./Navbar";
 export default function HomePage() {
   return (
     <div className="HomePage">
-      <h1>Mo's pizzera</h1>
+      <h1>Mo's pizzeria</h1>
       <Navbar />
       <p className="info">Best pizza in the whole of Jytland!</p>
       <p className="info">
